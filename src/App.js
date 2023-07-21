@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import logo from './meme.gif';
+import  {Memegen } from './components/memegen.js';
 import './App.css';
-
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="logo-container">
+          <img className="logo" src={logo}></img>
+          <h3 className="logo-title">Meme Generator</h3>
+        </div>
+        <p>React Course - Project 3</p>
       </header>
+      <main className="main-content">
+        <section className="section-generator">
+          
+          <Memegen />
+        </section>
+      
+      </main>
     </div>
   );
 }
